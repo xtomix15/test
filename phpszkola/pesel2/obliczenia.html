@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl2.css">
+    <title>Stacja paliw</title>
+</head>
+<body>
+    <div class="baner">
+        <h1>Całodobowa stacja paliw</h1>
+    </div>
+    <div class="menu">
+        <a href="stacja.html"><img src="home.png"></a>
+        <a href="obliczenia.html"><img src="znak.png"></a>
+        <a href="kwerendy.txt">Pobierz dokumenty</a>
+    </div>
+    <div class="lewy">
+        <h2>Orientacyjny koszt paliwa</h2>
+        <form>
+        <label for="numer">Rodzaj paliwa (1-benzyna, 2-olej napędowy)</label><br>
+        <input type="number" name="numer" id="numer"><br>
+        <label for="litr">Ile litrów</label><br>
+        <input type="number" name="litr" id="litr"><br>
+        <input onclick="Ilezl()" type="button" value="OBLICZ">
+        <div id="wynik"></div>
+        <script>
+            function Ilezl() {
+            let Rpaliwa = document.getElementById("numer").value;
+            let litry = document.getElementById("litr").value;
+            let wynik = document.getElementById("wynik");
+            if (Rpaliwa == 1) {
+            let koszt = litry * 4;
+            wynik.innerHTML = koszt + " zł";
+            } else if(Rpaliwa == 2){
+            let koszt = litry * 3.5;
+            wynik.innerHTML = koszt + " zł";
+            } else {
+            wynik.innerHTML = "0 zł";
+            }
+            }
+        </script>
+        </form>
+    </div>
+    <div class="prawy">
+        <img src="samochod.PNG" alt="samochód" id="samochod">
+    </div>
+    <div class="stopka">
+        <p>Stronę opracował: Tomasz Woźny</p>
+    </div>
+</body>
+</html>
