@@ -1,0 +1,9 @@
+SELECT nazwa
+FROM towary
+WHERE promocja = 1;
+
+SELECT cena FROM towary WHERE id = 10;
+
+SELECT dostawcy.nazwa, COUNT(towary.idDostawcy) as liczba_towarow FROM dostawcy, towary WHERE dostawcy.id = towary.idDostawcy;
+
+ALTER TABLE dostawcy ADD COLUMN (informacje TEXT);

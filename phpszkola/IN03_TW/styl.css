@@ -1,0 +1,57 @@
+*{
+    margin-top: 0;
+    font-family: Garamond;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #8C7B75;
+    color: white;
+    height: 70px;
+    font-size: 150%;
+}
+
+.left,
+.right {
+    background-color: #BCAAA4;
+    height: 400px;
+    width: 35%;
+}
+
+.center {
+    background-color: #EFDCD5;
+    height: 400px;
+    width: 30%;
+}
+
+.php2 {
+    margin-top: 100px;
+    border: 1px solid #8C7B75;
+}
+
+h2 {
+    margin: 5%;
+}
+
+ol{
+    list-style-type: lower-alpha;
+}
+
+ol li {
+    text-align: left;
+}
+
+img {
+    border: 1px dashed #8C7B75;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+}
